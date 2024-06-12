@@ -1,0 +1,9 @@
+div{
+    height: 10px;
+    width: 80%;
+    background-color: red;
+    border-radius: 5px;
+}
+.item{
+    text-align:  center;
+}
