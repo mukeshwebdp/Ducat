@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Textarea</title>
+</head>
+<body>
+    <form name="frm">
+        <textarea name="ad" rows="5" cols="35"></textarea>
+
+        <!-- readonly attribute allows the user to read the value but not write -->
+        <textarea name="ad" rows="5" cols="35" readonly>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia, aperiam! Ipsam sunt beatae asperiores maxime. Atque officia inventore magnam deleniti?
+        </textarea>
+
+        <p>Select Year</p>
+        <select>
+            <option>--Year--</option>
+            <option>2001</option>
+            <option>2002</option>
+            <option>2003</option>
+            <option>2004</option>
+            <option>2005</option>
+        </select>
+
+        <p>First option not selectable</p>
+        <select>
+            <option disabled selected>--Year--</option>
+            <option value="2001">2001</option>
+            <option value="2002">2002</option>
+            <option value="2003">2003</option>
+            <option value="2004">2004</option>
+            <option value="2005">2005</option>
+        </select>
+        <input type="submit" value="send">
+        <input type="submit" value="Loing">
+        <input type="reset" value="reset">
+    </form>
+    <button>click</button>
+    <button type="button">Save</button>
+</body>
+</html>
