@@ -5,12 +5,42 @@
     <title>table with form</title>
 </head>
 <body>
-        <table name="">
-            <form name="frm">
-                <tr height="70px">
-                    <td>Myform</td>
-                </tr>
-            </form>
-        </table>
+        <center>
+            <table name="" width="40%">
+                <form name="frm">
+                    <tr height="70px" bgcolor="orange">
+                        <th colspan="2">Myform</th>
+                    </tr>
+                    <tr>
+                        <td width="40%"> Name</td>
+                        <td><input type="text" name="name" placeholder="Enter name"></td>
+                    </tr>
+                    
+                    <tr>
+                        <td width="40%"> Password</td>
+                        <td><input type="text" name="password" placeholder="Enter password"></td>
+                    </tr>
+                    <tr>
+                        <td width="40%"> Gender</td>
+                        <td><input type="radio" name="gender" value="male"> Male
+                        <input type="radio" name="gender" value="FeMale"> Female
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>DOB</td>
+                        <td><input type="date" name="d" id=""></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <center>
+                                <input type="submit" value="submit">
+                            </center>
+                        </td>
+                    </tr>
+                    
+                    
+                </form>
+            </table>
+        </center>
 </body>
 </html>
