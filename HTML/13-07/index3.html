@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+/* .a,.b{height: 30px; width: 70%; margin: 4px 15%;}
+.c{height: 30px; width: 70%; margin: 4px 15%; border: none; border-bottom: 2px solid blue;}
+.c:focus{outline: none;}
+textarea{height: 70px; width: 70%; margin: 4px 15%;}
+label{margin-left: 15%;}
+.d{padding: 10px 30px; background: orange; margin-left: 15%; margin-top: 10px;}
+    */
+[type="text"],[type="password"]{
+    height: 30px; width: 70%; margin: 4px 15%;
+}
+[type="email"]{
+    height: 30px; width: 70%; margin: 4px 15%; border: none; border-bottom: 2px solid blue; 
+}
+[type="email"]:focus{outline: none;}  
+textarea{height: 70px; width: 70%; margin: 4px 15%;}
+label{margin-left: 15%;}
+[type="submit"]{
+    padding: 10px 30px; background: orange; margin-left: 15%; margin-top: 10px;
+}
+
+   </style>
+</head>
+<body>
+    <form name="frm">
+        <label>Enter name-:</label>
+        <input type="text" name="n" placeholder="enter name" >
+        <label>Password:</label>
+        <input type="password" name="p" placeholder="enter password" >
+        <label>Email:</label>
+        <input type="email" name="e" placeholder="enter email" >
+        <label>Address</label>
+        <textarea name="ad" placeholder="Enter Ur Address"></textarea>
+        <input type="submit" >
+    </form>
+</body>
+</html>

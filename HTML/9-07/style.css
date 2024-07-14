@@ -1,0 +1,18 @@
+h1{
+    color: yellow;
+    text-align: right;
+    background: gray;
+}
+p{
+    color:red;
+    border: 2px double gray;
+    text-align: center;
+    text-transform: uppercase;
+}
+.mydata{
+    font-size: 40px;
+}
+#mydata{
+    color: green;
+    text-align: center;
+}
