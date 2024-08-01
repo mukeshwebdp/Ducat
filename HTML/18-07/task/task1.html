@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task-1</title>
+    <style>
+        .container{
+            height: 1000px;
+            width: 90%;
+            border: 5px solid black;
+            padding: 50px;
+        }
+        .box-1{
+            padding: 50px;
+            background-color: pink;
+            text-align: center;
+            border: 5px solid black;
+        }
+        .box-1 > .photo{
+            width: 10%;
+            float: left;
+
+        }
+        .box-1 > p{
+            font-size: 40px;
+        }
+        .logo{
+            width: 10%;
+            float: right;
+            transform: translateY(-100%);
+        }
+        .info > p{
+            padding: 50px 30px;
+            background-color: pink;
+            text-align: center;
+            font-size: 2rem;
+            color: red;
+        }
+        .main{
+            height: 500px;
+            padding: 20px 100px;
+            background-color: pink;
+            border: 5px solid black;
+
+        }
+        .main > h2{
+            text-decoration: underline;
+        }
+        .main > p{
+            font-size: 18px;
+            margin: 50px 0;
+        }
+        .item{
+            margin-top: 50px;
+        }
+        .item > img{
+            width: 5%;
+            float: left;
+        }
+        .item > h2{
+            margin-left: 10px;
+            text-decoration: underline;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box-1">
+            <img class="photo" src="https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg?cs=srgb&dl=pexels-anjana-c-169994-674010.jpg&fm=jpg" alt="photos">
+            <p>Lorem, ipsum dolor.</p>
+            <img class="logo"  src="https://png.pngtree.com/png-vector/20220831/ourmid/pngtree-blank-circle-retro-logo-badges-vector-illustration-png-image_6132402.png" alt="logo">
+        </div>
+        <div class="info">
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+        </div>
+        <div class="main">
+            <h2>Information</h2>
+            <p>
+                <b>Lorem ipsum dolor sit</b> amet consectetur adipisicing elit. Vel voluptatem autem ipsum quibusdam iure! Minus neque ab facere fuga illum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam eos voluptate itaque fugiat molestias aliquid aperiam tempora natus ut libero esse, minus necessitatibus dolorum modi dignissimos sint quisquam quam illo!
+            </p>
+            <h2>Calculator</h2>
+            <div class="item">
+                <img src="https://png.pngtree.com/png-vector/20190115/ourmid/pngtree-vector-calculator-icon-png-image_319747.jpg" alt="calc">
+                <h2>Grades Calculator</h2>
+            </div>
+            <div class="item">
+                <img src="https://png.pngtree.com/png-vector/20190115/ourmid/pngtree-vector-calculator-icon-png-image_319747.jpg" alt="calc">
+                <h2>Grades Calculator</h2>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

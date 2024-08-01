@@ -1,0 +1,63 @@
+html {
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(blue, red);
+    background-repeat: no-repeat;
+}
+
+body {
+    text-align: center;
+    margin-top: 5%;
+}
+
+.main {
+    padding: 20px 40px;
+    border-radius: 5px;
+    width: 350px; /* Add this line to set a fixed width */
+    margin: 0 auto; /* Center the .main container */
+    box-shadow: 1px 1px 30px white;
+}
+h1{
+    color: white;
+}
+.input {
+    width: 100%;
+    /* border: 2px solid yellow; */
+    position: relative;
+    text-align: end;
+    display: flex;
+
+    
+}
+.input > input{
+    width: 90%;
+    height: 35px;
+    margin-top: 31px;
+    outline: none;
+    border: 1px solid white;
+}
+.input > span{
+    font-size: 22px;
+    width: 10%;
+    height: 37px;
+    background: white;
+    border: 1px solid white;
+    margin-top: 31px;
+}
+.input > span i{
+    padding-top: 4px ;
+    padding-right: 4px;
+}
+
+input[type='submit']{
+    font-size: 22px;
+    width: 100%;
+    height: 40px;
+    background: blue;
+    color: white;
+    border: 1px solid blue;
+}
+
+.submit{
+    padding-bottom: 50px;
+}

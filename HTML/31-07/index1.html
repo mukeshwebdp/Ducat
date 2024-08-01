@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Quarry</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        h1{
+            width: 100vw;
+            height: 100px;
+            text-align: center;
+            font-size: 45px;
+            background: orange;
+            transition: all 3s;
+        }
+        .center{
+            display: grid;
+            grid-template-columns: auto auto auto auto auto auto;
+            column-gap: 7px;
+        }
+        .center div{
+            padding: 50px;
+        }
+        .left1{
+            background: gray;
+        }
+        .left2{
+            background: rgb(180, 72, 72);
+        }
+        .left3{
+            background: rgb(41, 25, 25);
+        }
+        .left4{
+            background: rgb(46, 77, 178);
+        }
+        .left5{
+            background: rgb(21, 180, 169);
+        }
+        .left6{
+            background: rgb(171, 26, 190);
+        }
+        @media only screen and (max-width:1200px ) {
+               h1{
+                font-size: 35px;
+               }
+               .center{
+            grid-template-columns: auto auto auto auto;
+               }
+            }
+        @media only screen and (max-width:992px) {
+            h1{
+                font-size: 15px;
+                
+            }
+            .center{
+                grid-template-columns: auto auto auto;
+            }
+        }
+        @media only screen and (max-width:786px) {
+            h1{
+                font-size: 5px;
+               }
+               .center{
+            grid-template-columns: auto;
+
+               }
+            }
+    </style>
+</head>
+<body>
+    <h1>Lorem ipsum dolor sit.</h1>
+    <div class="center">
+        <div class="left1">box-1</div>
+        <div class="left2">box-2</div>
+        <div class="left3">box-3</div>
+        <div class="left4">box-4</div>
+        <div class="left5">box-5</div>
+        <div class="left6">box-6</div>
+    </div>
+</body>
+</html>

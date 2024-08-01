@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rotate</title>
+    <style>
+        .container{
+            margin: auto;
+        }
+        .box-1{
+            width: 300px;
+            height: 300px;
+            background: url('https://static.vecteezy.com/system/resources/thumbnails/028/626/672/small/hd-image-ai-generative-free-photo.jpeg');
+            background-position: center;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation: rotate-right 4s infinite linear;
+            position: absolute;
+           
+        }
+        .box-2{
+            width: 200px;
+            height: 200px;
+            background: url('https://static.remove.bg/sample-gallery/graphics/bird-thumbnail.jpg');
+            background-position: center;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation: rotate-left 4s infinite linear;
+            position: absolute;
+            left:  16%;
+            top: 16%;
+        }
+        .box-3{
+            width: 100px;
+            height: 100px;
+            background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlrZqTCInyg6RfYC7Ape20o-EWP1EN_A8fOA&s');
+            background-position: center;
+            border-radius: 50%;
+            position: relative;
+            animation: rotate-right 4s infinite linear;
+            position: absolute;
+            top: 33%;
+            left: 33%;
+        }
+        .container{
+            width: 300px;
+            height: 300px;
+            position: relative;
+        }
+        @keyframes rotate-right {
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes rotate-left {
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(-360deg);
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box-1">
+            
+        </div>
+        <div class="box-2">
+                           
+        </div>
+        <div class="box-3">
+            
+        </div>
+    </div>
+</body>
+</html>
