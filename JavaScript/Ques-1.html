@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question-1</title>
+    <style>
+        .text{
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+    <center><h1>First Question-1</h1></center>
+    <p class="text" >
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi architecto sequi accusantium voluptate, recusandae tempore minima nulla laudantium fugiat provident optio corporis, autem minus necessitatibus ut eligendi nisi iure nihil!
+    </p>
+        <button onclick="bold()">Bold</button>
+        <button onclick="italic()">Italic</button>
+        <button onclick="underLine()">UnderLine</button>
+        <button onclick="color()">Color</button>
+
+    <script>
+        const p = document.querySelector('.text');
+        console.log(p);
+
+        function bold(){
+            if(p.style.fontWeight === 'bold'){
+                p.style.fontWeight = 'normal';
+            }else{
+                p.style.fontWeight = 'bold';
+            }
+        }
+
+        function italic(){
+            if(p.style.fontStyle === 'italic'){
+                p.style.fontStyle = 'normal';
+            }else{
+                p.style.fontStyle = 'italic';
+            }
+        }
+
+        function underLine(){
+            if(p.style.textDecoration === 'underline'){
+                p.style.textDecoration = 'none';
+            }else{
+                p.style.textDecoration = 'underline';
+            }
+        }
+        function color(){
+            if(p.style.color === 'red'){
+                p.style.color ='black';
+            }else{
+                p.style.color = 'red';
+            }
+        }
+    </script>
+</body>
+</html>

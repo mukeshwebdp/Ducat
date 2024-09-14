@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question-2</title>
+</head>
+<body>
+    <center><h1>Question-2</h1></center>
+    <h2>Total: </h2>
+    <button onclick="add()">Add</button>
+    <button onclick="sub()">Sub</button>
+    <button onclick="div()">division</button>
+    <button onclick="mult()">Multiplication</button>
+    <script>
+        const h2 = document.querySelector('h2')
+
+        let a = parseInt(prompt('Enter first value'));
+        let b = parseInt(prompt('Enter second value'));
+        let total;
+        function add(){
+            total = a+b;
+            h2.textContent = `Total addition : ${total}`;
+        }
+        function sub(){
+            total = a-b;
+            h2.textContent = `Total Subtraction : ${total}`; 
+        }
+        function div(){
+            total = a/b;
+            h2.textContent = `Total division : ${total.toFixed(2)}`; 
+        }
+        function mult(){
+            total = a*b;
+            h2.textContent = `Total multiplication : ${total}`;
+        }
+
+    </script>
+</body>
+</html>

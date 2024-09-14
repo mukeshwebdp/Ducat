@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SetColor</title>
+</head>
+<body>
+    <h1>NEW</h1>  
+  <script>
+      let arr =['red','blue','orange','green'];
+    var i = 0;
+    function SetColor()  {
+        let result = document.querySelector('h1');
+        console.log(result)
+        result.style.color = arr[i];
+        i++;
+        if(i ==3){
+            i = 0;
+        }
+
+    }
+    setInterval(SetColor,300);
+  </script>
+</body>
+</html>
