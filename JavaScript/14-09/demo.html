@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box">
+        <input type="text" placeholder="Enter any items...">
+        <button onclick="add()">Add</button>
+    </div>
+
+    <div class="list">
+        <ul>
+            
+        </ul>
+    </div>
+    <script>
+        function add(){
+            let text = document.querySelector('input'); // get the input value
+            let ul = document.querySelector('ul');  // get the ul 
+            let li = document.createElement('li'); // create new list
+
+                if(text.value.trim() !== ''){
+                    li.innerText = text.value; // get the value
+                    ul.appendChild(li);
+                    text.value = ''; // empty input
+                }
+        }
+    </script>
+</body>
+</html>
